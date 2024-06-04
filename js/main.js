@@ -1,7 +1,7 @@
 console.log('Main JS Loaded')
 //functie om naar het volgende pagina(level) te gaan 
 function secondPage() {
-    window.open("farm.html", "_self")
+    window.open("../html/farm.html", "_self")
 }
 
 //variable voor het ophalen van buttons en images
@@ -38,7 +38,7 @@ function gameUpdate() {
         if (imageHeartThree) {
             imageHeartThree.remove();
         }
-        window.open("game-over.html", "_self");
+        window.open("../html/game-over.html", "_self");
     }
     // if statement voor Lola het konijntje die 5 punten heeft behaalt wordt ze verwezen naar het eindschrem.
     if (lolaHetKonijntjePoints === 4) {
@@ -53,7 +53,7 @@ function gameUpdate() {
 // if statement voor het bekijken of de queryselector in de variable klopt
 if (startOverBtn) {
     startOverBtn.addEventListener('click', function () {
-        window.open("index.html", "_self");
+        window.open("../html/index.html", "_self");
     });
 };
 
@@ -61,7 +61,7 @@ if (startOverBtn) {
 // if statement voor het bekijken of de queryselector in de variable klopt
 if (startOverAgainBtn) {
     startOverAgainBtn.addEventListener('click', function () {
-        window.open("index.html", "_self");
+        window.open("../html/index.html", "_self");
     });
 };
 
